@@ -8,7 +8,7 @@
 <h2>KATEGORİYE GÖRE ALIŞVERİŞ YAP</h2><hr>
  <ul style="list-style-type:none;">
     <li><a href="uygulama10.html">AYAKKABI</a></li><hr>
-    <li><a href="index1.php">BAHÇE</a></li><hr>
+    <li><a href="liste1.html">BAHÇE</a></li><hr>
     <li><a href="index1.php">BEBEK</a></li><hr>
     <li><a href="index1.php">BİLGİSAYAR</a></li><hr>
     <li><a href="index1.php">ELEKTRONİK</a></li><hr>
