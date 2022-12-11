@@ -13,9 +13,13 @@ CREATE TABLE urunler(
     isim VARCHAR(100),
     kategoriId INT,
     aciklama VARCHAR(250),
-    
+    fiyat INT,
+    adet INT,
+   
     FOREIGN KEY (kategoriId) REFERENCES kategoriler(id)
 );
+
+DROP TABLE urunler;
 
 CREATE TABLE kullanicilar(
 	id INT PRIMARY KEY AUTO_INCREMENT,
