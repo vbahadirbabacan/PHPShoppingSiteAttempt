@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" />
+</head>
+<style>
+* { padding:0px; margin:0px; }
+html, body {height:100%;}
+.tasiyici { width:1000px; margin:auto; border:1px solid #eee;}
+
+	.sabitsolbolum {float:left; width:299px; height:100%; background:#c0c0c0;
+	 border-right:1px solid #eee;
+	 							position:fixed; top: 0px;}
+	.sagbolum {float:right; width:700px; height:800px; background:#c0c0c0;}
+		.clear {clear:both;}
+li a {
+display: block;
+background-color: #D33257;
+color: #E7E7E7;
+height: 50px;
+line-height: 50px;
+text-decoration: none;
+padding-left: 10px;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding:0;
+width: 150px;
+}
+</style>
+<body>
+<div class="tasiyici">
+	<div class="sabitsolbolum"> 
+	<form action="anasayfa.html" method="post">
+	<center>Kullanıcı Adı</center><input width="10" maxlength="8" height="5" type="text" name="kullanici_adi" /><br/><br>
+	<center>Şifre</center><input width="10" height="5" type="password" name="sifre" /><br/>
+	<input type="checkbox" name="hatirla" />Beni Hatırla?<br />
+	<input type="submit" value="Giriş Yap"/>
+	<button><a href="kayitol.html">Hesabınız yok mu? --> Kayıt Ol</a></button>
+	</div>
+	<div class="sagbolum">hareketli sağ içerik</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>localhost:4000</title>
+    
+<style>
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; width: 800px;
+}
+ 
+.cf:after {
+  clear: both;
+}
+ 
+.cf {
+  *zoom: 1;
+}
+ 
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+
+.menu {			
+  margin: 30px auto;
+  width: 200px;
+ 
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+ 
+.menu > li {
+  background: #34495e;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+ 
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;ª
+  font-family: Courier , Helvetica;
+  font-size: 6px;
+}		
+ 
+.menu li:hover {
+  background: #e74c3c;
+}		
+ 
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+ 
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+ 
+.submenu li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;		
+}						
+ 
+.submenu > li > a {
+  padding: 1em 2em;			
+}
+ 
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+ 
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+ 
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+ 
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+ 
+/* Even stuff */
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+ 
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+ 
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+ 
+/* Show dropdown */
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+ 
+.submenu li {
+  transition: .2s ease transform;
+}
+ 
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+ 
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+ 
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+ 
+</style>
+</head>
+<body bgcolor="#EEEEEE">
+<center><div style="width="800" height="25"">
+<img src="img.png" alt="" width="800" height="100" align="center">
+<input type="search" style="width: 800px" style="height: 25px"></input><button>ARA</button>
+</div></center>
+<table border="1" align="center" width="800" height="5">
+
+</tr>
+</table>
+<table border="0" align="center" width="800" height="200" >
+<ul class="menu cf" >
+        <li>
+          <a href="">AYAKKABI</a>
+          <ul class="submenu">
+            <li><a href="">SNEAKER</a></li>
+            <li><a href="">LOAFER</a></li>
+            <li><a href="">SPOR</a></li>
+            <li><a href="">BABET</a></li>
+            <li><a href="">GÜNLÜK</a></li>
+            <li><a href="">KLASİK</a></li>
+            <li><a href="">TOPUKLU</a></li>
+            <li><a href="">SANDALET</a></li>
+            <li><a href="">TERLİK</a></li>
+          </ul>			
+        </li>
+        <li>
+          <a href="">MÜZİK EKİPMANLARI VE ENSTRÜMANLARI</a>
+          <ul class="submenu">
+            <li><a href="">NEFESLİ ÇALGILAR</a></li>
+            <li><a href="">YAYLI ÇALGILAR</a></li>
+            <li><a href="">TELLİ ÇALGILAR</a></li>
+            <li><a href="">VURMALI ÇALGILAR</a></li>
+            <li><a href="">TUŞLU ÇALGILAR</a></li>
+          </ul>			
+        </li>
+        <li>
+          <a href="">ELEKTRİK ELEKTRONİK</a>
+          <ul class="submenu">
+            <li><a href="">BİLGİSAYAR BİLEŞENLERİ</a></li>
+            <li><a href="">MODEM</a></li>
+            <li><a href="">KULAKLIK</a></li>
+            <li><a href="">OYUN & OYUN KONSOLLARI</a></li>
+            <li><a href="">FOTO / KAMERA</a></li>
+            <li><a href="">YAZICI</a></li>
+            <li><a href="">CEP TELEFONLARI</a></li>
+            <li><a href="">TABLET</a></li>
+            <li><a href="">AKILLI GİYİLEBİLİR ÜRÜNLER</a></li>
+            <li><a href="">CEP TELEFONU AKSESUARLARI</a></li>
+            <li><a href="">TABLET VE İPAD AKSESUARLARI</a></li>
+            <li><a href="">TELSİZ / MASAÜSTÜ TELEFONLAR</a></li>
+            <li><a href="">KLİMA VE KOMBİ</a></li>
+            <li><a href="">TV GÖRÜNTÜ VE SES SİSTEMLERİ</a></li>
+            <li><a href="">ELEKTRİKLİ EV ALETLERİ</a></li>
+          </ul>			
+        </li>
+        <li>
+          <a href="">EV VE YAŞAM</a>
+          <ul class="submenu">
+            <li><a href="">SOFRA VE MUTFAK</a></li>
+            <li><a href="">EV TEKSTİL</a></li>
+            <li><a href="">YATAK</a></li>
+            <li><a href="">EV DEKORASYON</a></li>
+            <li><a href="">EV GEREÇLERİ</a></li>
+            <li><a href="">MOBİLYA</a></li>
+            <li><a href="">AYDINLATMA</a></li>
+            <li><a href="">OFİS MOBİLYALARI</a></li>
+            <li><a href="">BANYO</a></li>
+          </ul>			
+        </li>
+        <li>
+          <a href="">KOZMETİK SAĞLIK GÜZELLİK</a>
+          <ul class="submenu">
+            <li><a href="">PARFÜM / DEDORANT</a></li>
+            <li><a href="">MAKYAJ</a></li>
+            <li><a href="">CİLT BAKIMI</a></li>
+            <li><a href="">GÜNEŞ BAKIMT</a></li>
+            <li><a href="">KİŞİSEL BAKIM</a></li>
+            <li><a href="">AİLE PLANLAMASI VE CİNSEL SAĞLIK</a></li>
+          </ul>			
+        </li>
+        <li>
+          <a href="">KİTAP</a>
+          <ul class="submenu">
+            <li><a href="">ANI</a></li>
+            <li><a href="">ROMAN</a></li>
+            <li><a href="">HİKAYE</a></li>
+            <li><a href="">GEZİ</a></li>
+            <li><a href="">ŞİİR</a></li>
+            <li><a href="">BİYOGRAFİ</a></li>
+            <li><a href="">DİN</a></li>
+            <li><a href="">BİLGİ</a></li>
+            <li><a href="">ÇOCUK</a></li>           
+          </ul>			
+        </li>
+        <li>
+          <a href="">MODA</a>
+          <ul class="submenu">
+            <li><a href="">KADIN</a></li>
+            <li><a href="">ERKEK</a></li>
+            <li><a href="">KADIN AKSESUAR VE TAKI</a></li>
+            <li><a href="">ERKEK AKSESUAR VE TAKI</a></li>
+            <li><a href="">ÇOCUK VE BEBEK</a></li>
+            <li><a href="">AYAKKABI VE BEBEK</a></li>
+          </ul>			
+        </li>
+        <li>
+          <a href="">BEYAZ EŞYA / ISITMA / SOĞUTMA</a>
+          <ul class="submenu">
+            <li><a href="">ÇAMAŞIR MAKİNESİ</a></li>
+            <li><a href="">BULAŞIK MAKİNESİ</a></li>
+            <li><a href="">ANKASTRE SETİ</a></li>
+            <li><a href="">VANTİLATÖRLER</a></li>
+            <li><a href="">FIRINLAR</a></li>
+            <li><a href="">KURUTMA MAKİNELERİ</a></li>
+            <li><a href="">ÇAMAŞIR MAKİNESİ</a></li>
+            <li><a href="">BUZDOLAPLARI</a></li>
+            <li><a href="">DERİN DONDURUCULAR</a></li>
+            <li><a href="">ŞOFBENLER</a></li>
+            <li><a href="">MİKRODALGA FIRINLAR</a></li>
+            <li><a href="">SU SEBİLİ</a></li>
+            <li><a href="">SOBA VE ISITICILAR</a></li>
+            <li><a href="">DAVLUMBAZLAR</a></li>
+            <li><a href="">TERMOSİFONLAR</a></li>
+            <li><a href="">ASPİRATÖRLER</a></li>          
+          </ul>			
+        </li>
+        <li>
+          <a href="">HAKKIMIZDA</a>
+          <ul class="submenu">
+            <li></li>
+          </ul>			
+        </li>
+     </ul>
+<tr bgcolor="MidnightBlue" width="810" height="200">
+<td  colspan="4"> <center><font color="MidnightBlue"><p align="right"><button><a href=""> <h1> > </h1> </a></button></p></font></td>
+</tr>
+<tr height="20">
+<td>
+<marquee behavior=alternate>
+<center>LOCAL</center>
+<img src="img/ayakkabi.png" height="40" width="40"/>
+<img src="img/müzik.png" height="40" width="40"/>
+<img src="img/ee.png" height="40" width="40"/>
+<img src="img/evveyasam.png" height="40" width="80"/>
+<img src="img/kozmetik.png" height="40" width="40"/>
+<img src="img/kitap.png" height="40" width="40"/>
+<img src="img/moda.png" height="40" width="40"/>
+<img src="img/beyazesya.png" height="40" width="80"/>
+<center>HOST</center>
+</marquee>
+</td>
+</tr>
+<tr bgcolor="MidnightBlue" valign="top" width="800" height="900">
+<td><center><font color="white">
+<center><h1>TELSİZ / MASAÜSTÜ TELEFONLAR</h1>
+<table bgcolor="#FFFFF0" border="1" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+            
+            <td colspan="5" height="35" align="center" ><font color="black" face="Times New Roman"><h2></h2></font></td>
+
+        </tr>
+        <tr>
+
+            <td width="300" aling="center" height="20"><font color="black" face="Times New Roman"><center>ÜRÜN FOTOĞRAFİ</center></font></td>
+            <td width="300" aling="center" ><font color="black" face="Times New Roman"><center>ÜRÜN BİLGİSİ</center></font></td>
+            <td width="300" aling="center" ><font color="black" face="Times New Roman"><center>ÜRÜN FİYATİ</center></font></td>
+            <td width="300" aling="center" ><font color="black" face="Times New Roman"><center>ADET</center></font></td>
+            <td width="300" aling="center" ><font color="black" face="Times New Roman"><center>SEPETE EKLE</center></font></td>		
+        </tr>
+
+        <tr>
+
+            <td aling="center" height="150"><center><img src="" width="100" height="100"></center></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center></center><br></font></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center><br>	Fiyatlara KDV dahildir.</center></font></td>
+            <td aling="center" ><center><input type=button onclick="arttir()" value="+"><input type=button id="sonuc" value="0"><input type=button onclick="azalt()" value="-"></center></th></td>
+            <td><center><button type="button"><center>Sepete Ekle</center></button></center></td>	
+        </tr>
+        <tr>
+            <td aling="center" height="150"><center><img src="" width="100" height="100"></center></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center></center><br></font></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center><br>	Fiyatlara KDV dahildir.</center></font></td>
+            <td aling="center" ><center><input type=button onclick="arttir()" value="+"><input type=button id="sonuc" value="0"><input type=button onclick="azalt()" value="-"></center></th></td>
+            <td><center><button type="button"><center>Sepete Ekle</center></button></center></td>	
+            
+        </tr>
+        <tr>
+
+            <td aling="center" height="150"><center><img src="" width="100" height="100"></center></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center></center><br></font></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center><br>	Fiyatlara KDV dahildir.</center></font></td>
+            <td aling="center" ><center><input type=button onclick="arttir()" value="+"><input type=button id="sonuc" value="0"><input type=button onclick="azalt()" value="-"></center></th></td>
+            <td><center><button type="button"><center>Sepete Ekle</center></button></center></td>	
+        </tr>
+        <tr>
+
+            <td aling="center" height="150"><center><img src="" width="100" height="100"></center></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center></center><br></font></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center><br>	Fiyatlara KDV dahildir.</center></font></td>
+            <td aling="center" ><center><input type=button onclick="arttir()" value="+"><input type=button id="sonuc" value="0"><input type=button onclick="azalt()" value="-"></center></th></td>
+            <td><center><button type="button"><center>Sepete Ekle</center></button></center></td>	
+        </tr>
+        <tr>
+
+            <td aling="center" height="150"><center><img src="" width="100" height="100"></center></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center></center><br></font></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center><br>	Fiyatlara KDV dahildir.</center></font></td>
+            <td aling="center" ><center><input type=button onclick="arttir()" value="+"><input type=button id="sonuc" value="0"><input type=button onclick="azalt()" value="-"></center></th></td>
+            <td><center><button type="button"><center>Sepete Ekle</center></button></center></td>	
+        </tr>
+        <tr>
+
+            <td aling="center" height="150"><center><img src="" width="100" height="100"></center></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center></center><br></font></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center><br>	Fiyatlara KDV dahildir.</center></font></td>
+            <td aling="center" ><center><input type=button onclick="arttir()" value="+"><input type=button id="sonuc" value="0"><input type=button onclick="azalt()" value="-"></center></th></td>
+            <td><center><button type="button"><center>Sepete Ekle</center></button></center></td>	
+        </tr>
+        <tr>
+
+            <td aling="center" height="150"><center><img src="" width="100" height="100"></center></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center></center><br></font></td>
+            <td aling="center" ><font color="black" face="Times New Roman"><center><br>	Fiyatlara KDV dahildir.</center></font></td>
+            <td aling="center" ><center><input type=button onclick="arttir()" value="+"><input type=button id="sonuc" value="0"><input type=button onclick="azalt()" value="-"></center></th></td>
+            <td><center><button type="button"><center>Sepete Ekle</center></button></center></td>	
+        </tr>
+    </table>
+</font></center></td>
+</tr>	
+</tr>   
+</table>     
+</body>
+</html>
